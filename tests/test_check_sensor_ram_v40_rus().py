@@ -28,7 +28,7 @@ def test_check_sensor_ram_v40(browser):
     element_version_4_0.click()
 
     # Находим селектор языка и выбираем русский
-    language_selector_locator = (By.CLASS_NAME, 'js_header_lang_list')  # Измененный класс селектора
+    language_selector_locator = (By.CLASS_NAME, 'js_header_lang_list')  
     language_selector = WebDriverWait(browser, 10).until(
         EC.visibility_of_element_located(language_selector_locator)
     )
